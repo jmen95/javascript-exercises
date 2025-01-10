@@ -1,3 +1,6 @@
+/**
+ * orderArray should order a list of numbers
+ */
 function orderArray(arrayOfNumbers) {
   const sortedArrayOfNumbers = [...arrayOfNumbers];
   for (let i = 0; i < sortedArrayOfNumbers.length; i++) {
@@ -37,6 +40,7 @@ const validateKey = (event) => {
 };
 firstInputNumber.addEventListener("keypress", validateKey);
 btnAdd.addEventListener("click", addInput);
+
 const handleSort = () => {
   const inputNumbers = document.querySelectorAll(".input-numbers");
   const numbers = [];
@@ -48,4 +52,5 @@ const handleSort = () => {
   const sortedArray = orderArray(numbers);
   alert(sortedArray);
 };
+
 btnSort.addEventListener("click", handleSort);
